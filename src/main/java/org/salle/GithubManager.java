@@ -25,7 +25,7 @@ public class GithubManager {
 
         GithubService githubService = retrofit.create(GithubService.class);
 
-        Call<List<Repo>> call = githubService.listRepos("RockyJames");
+        Call<List<Repo>> call = githubService.listRepos("jaumecampeny");
 
         try {
             Response<List<Repo>> response = call.execute();
